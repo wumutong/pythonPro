@@ -8,3 +8,9 @@ array2 = ny.array(b)
 for x in array1:
     print(ny.sum(x-b))
     print(ny.sum(x-b)**2)
+
+#结果的含义是：距离最小的点在distances数组中的索引是1，
+#第二小的点索引是3... 近到远是哪些点
+distances = [5,1,3,2,4]
+nearest = ny.argsort(distances)
+print(nearest)

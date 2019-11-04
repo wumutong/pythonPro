@@ -38,8 +38,11 @@ distances = [sqrt(np.sum((x_train - x) ** 2)) for x_train in X_train]
 
 print(distances)
 
-
-
+# 根据 numpy.argsort对数组进行从小到大
+# 距离最小的点在distances数组中的索引是7，
+# 第二小的点索引是8... 近到远是哪些点
+nearest = np.argsort(distances)
+print(nearest)
 
 
 
