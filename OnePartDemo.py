@@ -44,7 +44,9 @@ print(distances)
 nearest = np.argsort(distances)
 print(nearest)
 
-
+k = 6
+topK_y = [y_train[i] for i in nearest[:k]]
+print(topK_y)
 
 
 
