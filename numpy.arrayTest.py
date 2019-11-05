@@ -1,5 +1,4 @@
 from typing import Counter
-
 import numpy as ny
 a= [[3.393533211, 2.331273381],
               [3.110073483, 1.781539638],
@@ -42,6 +41,59 @@ def testAssert(k):
     assert k == 1,"k must be valid" #为你抛出的异常说明
 xb = 1 # 如果是xb 不等于 1 会抛出异常
 testAssert(xb)
+
+print("********************我是分隔符**********************************")
+xc = [1,1,1,1,1,1,1,1] #注意：这是一个列表 不能.shape[]
+reshape = ny.array(xc).reshape(2, 4) # 返回一个元组 可以.shape[]
+print(reshape)
+# 输出:  说明：reshape是改变原列表形状 变 2行 4列 可以看做二维
+#[[1 1 1 1]
+# [1 1 1 1]]
+print(ny.shape(xc),ny.shape(reshape))  # 输出它们形状 (8,) (2, 4)
+# [1 1 1 1 1 1 1 1] -> 8 原因 这是一个二维 8
+print(ny.array(xc).shape[0]) # 8
+# shape[0] 为第一维的长度（行），shape[1] 为第二维的长度（列）
+print(reshape.shape[0],reshape.shape[1]) # 2 4
+# narray的总元素个数为N 矩阵的第一维度大小为1，第二维度大小为N。
+xf = [[1,2],[3,4]]
+xv = ny.array(xf).reshape(1,-1)
+print(xv) # [[1 2 3 4]]
+print(xv.shape[0],xv.shape[1]) # 1 4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
