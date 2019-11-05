@@ -51,10 +51,11 @@ print(topK_y)
 # 由上面我们可以了解  topK_y 中有 [1,1,1,1,1,0]
 from collections import Counter
 votes = Counter(topK_y)
-print(votes)  # 输出 Counter({1: 5, 0: 1})  1 出现5次  0出现 1次
+print(votes)  # 输出一个字典 Counter({1: 5, 0: 1})  1 出现5次  0出现 1次
 # votes.most_common(1)[0][0]   1 代表取几个最大的值
 # 第一个0代表  第一个最大的值的数 第二个0 代表第一个最大值得数出现的频率
 print(votes.most_common(1)[0][0])
+
 
 
 
