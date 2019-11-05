@@ -4,8 +4,9 @@ class initDemo:
         self.name = name
         self.score = score
     def __repr__(self):
-        return "Knn(k=%d)" % self.k
+        return "Knn(k=%d)" % self.name
     def MyPrint(self):
         return self.name
     # 相当于构造函数 __init__(必须这样写) 第一个参数必须 ->  self
 print(initDemo("张三",1).MyPrint()) # 张三
+print(repr(initDemo("zhang",1)))
