@@ -1,3 +1,5 @@
+from typing import Counter
+
 import numpy as ny
 a= [[3.393533211, 2.331273381],
               [3.110073483, 1.781539638],
@@ -27,9 +29,15 @@ c=[a[i] for i in b[0:5]]
 print(c)
 
 print("********************我是分隔符**********************************")
+# 测试有关 collections 中 Counter 用法 和 字典中 most_common 用法
+xa = [1,2,1,1,1,1,2,2,2,0,0,0]
+counter = Counter(xa)
+print(counter) # 输出一个字典 Counter({1: 5, 2: 4, 0: 3}) 1出现5次  2出现4次 ...
+# counter.most_common(1)[0][0]   1 代表取几个最大的值
+# 第一个0代表  第一个最大的值的数 第二个0 代表第一个最大值得数出现的频率
+print(counter.most_common(1)[0][0]) # 1
 
-#
-
+print("********************我是分隔符**********************************")
 
 
 
