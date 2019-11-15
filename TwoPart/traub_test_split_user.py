@@ -20,7 +20,7 @@ my_kNNClassifier.fit(X_train,y_train)
 #测试
 y_predict = my_kNNClassifier.predict(X_test)
 
-# 两个向量的比较，返回一个布尔型向量，对这个布尔向量（faluse=1，true=0）sum，
+# 两个向量的比较，返回一个布尔型向量，对这个布尔向量（false=1，true=0）sum，
 print(sum(y_predict == y_test)) #8
 print(sum(y_predict == y_test)/len(y_test)) #0.26666666666666666
 
