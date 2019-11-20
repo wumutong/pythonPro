@@ -8,21 +8,21 @@ X = iris.data
 y = iris.target
 
 
-#调用我们编写的随机取样测试方法
+# 调用我们编写的随机取样测试方法
 X_train, X_test, y_train, y_test = train_test_split(X, y)
-#输出我们我编写的随机取样测试方法
+# 输出我们我编写的随机取样测试方法
 print(X_train.shape)
 print(X_test.shape)
 print(y_train.shape)
 print(y_test.shape)
 
 from OnePart.OnePartDemoPlus import OnePartDemoPlus
-#测试
+# 查看 生成的测试数据
 knn_clf = OnePartDemoPlus(k=3)
 knn_clf.fit(X_train, y_train)
 y_predict = knn_clf.predict(X_test)
 # 比对y_predict和y_test结果是否一致
-print(sum(y_predict == y_test) / len(y_test))#0.9955555555555555
+print(sum(y_predict == y_test)/len(y_test))
 
 
 
