@@ -22,7 +22,7 @@ X_train_standard = standardScaler.transform(X_train)
 print(X_train_standard)
 print("**************************我是分隔符*******************************")
 X_test_standard = standardScaler.transform(X_test)
-
+print(X_test_standard)
 
 
 
