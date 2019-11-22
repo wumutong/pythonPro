@@ -9,6 +9,7 @@ point = points[0]
 # kNN
 dists, indices = tree.query([point], k=3)
 print(dists, indices)
+print("********************************")
 # query radius"半径"
 indices = tree.query_radius([point], r=0.2)
 print(indices)
