@@ -22,3 +22,36 @@ def kd_tree(points,depth):
     # 对于右子树，重复构建（depth+1）
     node.right = kd_tree(points[medium_index + 1:], depth + 1)
     return node
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
